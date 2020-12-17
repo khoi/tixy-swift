@@ -1,0 +1,444 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D62E7ACC258B3EFD000E1EF5 /* tixyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62E7AB9258B3EFC000E1EF5 /* tixyApp.swift */; };
+		D62E7ACD258B3EFD000E1EF5 /* tixyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62E7AB9258B3EFC000E1EF5 /* tixyApp.swift */; };
+		D62E7ACE258B3EFD000E1EF5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62E7ABA258B3EFC000E1EF5 /* ContentView.swift */; };
+		D62E7ACF258B3EFD000E1EF5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62E7ABA258B3EFC000E1EF5 /* ContentView.swift */; };
+		D62E7AD0258B3EFD000E1EF5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D62E7ABB258B3EFD000E1EF5 /* Assets.xcassets */; };
+		D62E7AD1258B3EFD000E1EF5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D62E7ABB258B3EFD000E1EF5 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D62E7AB9258B3EFC000E1EF5 /* tixyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tixyApp.swift; sourceTree = "<group>"; };
+		D62E7ABA258B3EFC000E1EF5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D62E7ABB258B3EFD000E1EF5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D62E7AC0258B3EFD000E1EF5 /* tixy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tixy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D62E7AC3258B3EFD000E1EF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D62E7AC8258B3EFD000E1EF5 /* tixy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tixy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D62E7ACA258B3EFD000E1EF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D62E7ACB258B3EFD000E1EF5 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D62E7ABD258B3EFD000E1EF5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D62E7AC5258B3EFD000E1EF5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D62E7AB3258B3EFC000E1EF5 = {
+			isa = PBXGroup;
+			children = (
+				D62E7AB8258B3EFC000E1EF5 /* Shared */,
+				D62E7AC2258B3EFD000E1EF5 /* iOS */,
+				D62E7AC9258B3EFD000E1EF5 /* macOS */,
+				D62E7AC1258B3EFD000E1EF5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D62E7AB8258B3EFC000E1EF5 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				D62E7AB9258B3EFC000E1EF5 /* tixyApp.swift */,
+				D62E7ABA258B3EFC000E1EF5 /* ContentView.swift */,
+				D62E7ABB258B3EFD000E1EF5 /* Assets.xcassets */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		D62E7AC1258B3EFD000E1EF5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D62E7AC0258B3EFD000E1EF5 /* tixy.app */,
+				D62E7AC8258B3EFD000E1EF5 /* tixy.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D62E7AC2258B3EFD000E1EF5 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				D62E7AC3258B3EFD000E1EF5 /* Info.plist */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		D62E7AC9258B3EFD000E1EF5 /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				D62E7ACA258B3EFD000E1EF5 /* Info.plist */,
+				D62E7ACB258B3EFD000E1EF5 /* macOS.entitlements */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D62E7ABF258B3EFD000E1EF5 /* tixy (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D62E7AD4258B3EFD000E1EF5 /* Build configuration list for PBXNativeTarget "tixy (iOS)" */;
+			buildPhases = (
+				D62E7ABC258B3EFD000E1EF5 /* Sources */,
+				D62E7ABD258B3EFD000E1EF5 /* Frameworks */,
+				D62E7ABE258B3EFD000E1EF5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "tixy (iOS)";
+			productName = "tixy (iOS)";
+			productReference = D62E7AC0258B3EFD000E1EF5 /* tixy.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D62E7AC7258B3EFD000E1EF5 /* tixy (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D62E7AD7258B3EFD000E1EF5 /* Build configuration list for PBXNativeTarget "tixy (macOS)" */;
+			buildPhases = (
+				D62E7AC4258B3EFD000E1EF5 /* Sources */,
+				D62E7AC5258B3EFD000E1EF5 /* Frameworks */,
+				D62E7AC6258B3EFD000E1EF5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "tixy (macOS)";
+			productName = "tixy (macOS)";
+			productReference = D62E7AC8258B3EFD000E1EF5 /* tixy.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D62E7AB4258B3EFC000E1EF5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					D62E7ABF258B3EFD000E1EF5 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					D62E7AC7258B3EFD000E1EF5 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+				};
+			};
+			buildConfigurationList = D62E7AB7258B3EFC000E1EF5 /* Build configuration list for PBXProject "tixy" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D62E7AB3258B3EFC000E1EF5;
+			productRefGroup = D62E7AC1258B3EFD000E1EF5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D62E7ABF258B3EFD000E1EF5 /* tixy (iOS) */,
+				D62E7AC7258B3EFD000E1EF5 /* tixy (macOS) */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D62E7ABE258B3EFD000E1EF5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D62E7AD0258B3EFD000E1EF5 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D62E7AC6258B3EFD000E1EF5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D62E7AD1258B3EFD000E1EF5 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D62E7ABC258B3EFD000E1EF5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D62E7ACE258B3EFD000E1EF5 /* ContentView.swift in Sources */,
+				D62E7ACC258B3EFD000E1EF5 /* tixyApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D62E7AC4258B3EFD000E1EF5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D62E7ACF258B3EFD000E1EF5 /* ContentView.swift in Sources */,
+				D62E7ACD258B3EFD000E1EF5 /* tixyApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		D62E7AD2258B3EFD000E1EF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D62E7AD3258B3EFD000E1EF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		D62E7AD5258B3EFD000E1EF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9ZLSJ2GN2B;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.khoi.tixy;
+				PRODUCT_NAME = tixy;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D62E7AD6258B3EFD000E1EF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9ZLSJ2GN2B;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.khoi.tixy;
+				PRODUCT_NAME = tixy;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D62E7AD8258B3EFD000E1EF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 9ZLSJ2GN2B;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = macOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.khoi.tixy;
+				PRODUCT_NAME = tixy;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		D62E7AD9258B3EFD000E1EF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 9ZLSJ2GN2B;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = macOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.khoi.tixy;
+				PRODUCT_NAME = tixy;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D62E7AB7258B3EFC000E1EF5 /* Build configuration list for PBXProject "tixy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D62E7AD2258B3EFD000E1EF5 /* Debug */,
+				D62E7AD3258B3EFD000E1EF5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D62E7AD4258B3EFD000E1EF5 /* Build configuration list for PBXNativeTarget "tixy (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D62E7AD5258B3EFD000E1EF5 /* Debug */,
+				D62E7AD6258B3EFD000E1EF5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D62E7AD7258B3EFD000E1EF5 /* Build configuration list for PBXNativeTarget "tixy (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D62E7AD8258B3EFD000E1EF5 /* Debug */,
+				D62E7AD9258B3EFD000E1EF5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D62E7AB4258B3EFC000E1EF5 /* Project object */;
+}

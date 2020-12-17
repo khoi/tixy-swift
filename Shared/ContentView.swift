@@ -26,7 +26,7 @@ func scale(v: Double) -> CGFloat {
 struct ContentView: View {
     let size: Int
     
-    let transform: TransformFunc
+    let jsRuntime = JavaScriptRuntime()
     
     @State var t: TimeInterval = 0
     let started = Date()
@@ -40,7 +40,7 @@ struct ContentView: View {
                 ForEach(0..<size, id: \.self) { y in
                     HStack {
                         ForEach(0..<size, id: \.self) { x in
-                            let v = self.transform(t, Double(y * size + x), Double(x), Double(y))
+                            let v = jsRuntime.transform(t, Double(y * size + x), Double(x), Double(y))
                             Circle()
                                 .fill()
                                 .foregroundColor(color(v: v))
@@ -55,19 +55,16 @@ struct ContentView: View {
         .onReceive(timer, perform: { _ in
             t = Date().timeIntervalSince(started)
         })
+        .onAppear(perform: {
+            jsRuntime.updateScript("Math.sin(t-Math.sqrt((x-7.5)**2+(y-6)**2))")
+        })
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView(
-            size: 16,
-            transform: { (t, i, x, y) in
-                let a = pow(x-7.5, 2)
-                let b = pow(y-6, 2)
-                return sin(t-sqrt(a + b))
-            }
-        
+            size: 16
         )
         .previewLayout(.fixed(width: 320, height: 320))
     }

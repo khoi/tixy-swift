@@ -40,7 +40,7 @@ struct TixyMatrix: View {
             t = Date().timeIntervalSince(started)
         })
         .onAppear(perform: {
-            jsRuntime.updateScript("Math.random() * 2 - 1")
+            jsRuntime.updateScript("random() * 2 - 1")
         })
     }
 }

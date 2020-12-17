@@ -20,7 +20,9 @@ final class JavaScriptRuntime {
         """
         var transform = new Function('t', 'i', 'x', 'y', `
             try {
-                return \(s);
+                with (Math) {
+                    return \(s);
+                }
             } catch(err) {
                 return 0;
             }

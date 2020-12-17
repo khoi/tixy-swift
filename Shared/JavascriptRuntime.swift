@@ -10,19 +10,19 @@ import JavaScriptCore
 
 final class JavaScriptRuntime {
     let context: JSContext!
-    
-    var transform: ((_ t: Double, _ i: Double, _ x: Double, _ y: Double) -> Double)
-    
+
+    var transform: (_ t: Double, _ i: Double, _ x: Double, _ y: Double) -> Double
+
     init() {
-        self.context = JSContext()
-        context.exceptionHandler = { context, exception in
+        context = JSContext()
+        context.exceptionHandler = { _, exception in
             fatalError(exception!.toString())
         }
-        transform = { _, _, _ ,_ in
+        transform = { _, _, _, _ in
             0
         }
     }
-    
+
     func jsFunctionString(s: String) -> String {
         """
         var transform = new Function('t', 'i', 'x', 'y', `
@@ -34,12 +34,12 @@ final class JavaScriptRuntime {
         `)
         """
     }
-    
+
     func updateScript(_ s: String) {
         context.evaluateScript(jsFunctionString(s: s))
         let transformFunc = context.objectForKeyedSubscript("transform")
-        self.transform = { (t, i, x, y) in
-           return transformFunc?.call(withArguments: [t,i,x,y])?.toDouble() ?? 0
+        transform = { t, i, x, y in
+            transformFunc?.call(withArguments: [t, i, x, y])?.toDouble() ?? 0
         }
     }
 }

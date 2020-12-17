@@ -11,7 +11,12 @@ import SwiftUI
 struct tixyApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(
+                size: 16,
+                transform: { (_, _, _, y) in
+                    CGFloat(y) - 7.5
+                }
+            )
         }
     }
 }

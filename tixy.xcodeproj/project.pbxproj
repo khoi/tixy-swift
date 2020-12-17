@@ -24,6 +24,7 @@
 		D62E7AC8258B3EFD000E1EF5 /* tixy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tixy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D62E7ACA258B3EFD000E1EF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D62E7ACB258B3EFD000E1EF5 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		D62E7ADC258B3F10000E1EF5 /* tixy.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = tixy.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +48,7 @@
 		D62E7AB3258B3EFC000E1EF5 = {
 			isa = PBXGroup;
 			children = (
+				D62E7ADC258B3F10000E1EF5 /* tixy.entitlements */,
 				D62E7AB8258B3EFC000E1EF5 /* Shared */,
 				D62E7AC2258B3EFD000E1EF5 /* iOS */,
 				D62E7AC9258B3EFD000E1EF5 /* macOS */,
@@ -320,6 +322,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = tixy.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9ZLSJ2GN2B;
 				ENABLE_PREVIEWS = YES;
@@ -332,6 +335,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = io.khoi.tixy;
 				PRODUCT_NAME = tixy;
 				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -342,6 +346,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = tixy.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9ZLSJ2GN2B;
 				ENABLE_PREVIEWS = YES;
@@ -354,6 +359,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = io.khoi.tixy;
 				PRODUCT_NAME = tixy;
 				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;

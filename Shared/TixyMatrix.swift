@@ -18,6 +18,8 @@ struct TixyMatrix: View {
 
     private let timer = Timer.publish(every: 1 / 60.0, on: .main, in: .common).autoconnect()
 
+    @State var script: String = "-.4 /(hypot(x-t%10,y-t%8)-t%2*9)"
+
     var body: some View {
         GeometryReader { reader in
             VStack {
@@ -32,6 +34,11 @@ struct TixyMatrix: View {
                         }
                     }
                 }
+                TextField("script",
+                          text: $script,
+                          onEditingChanged: { _ in
+                              jsRuntime.updateScript(script)
+                          }).foregroundColor(.white)
             }
             .frame(width: min(reader.size.width, reader.size.height), height: min(reader.size.width, reader.size.height))
         }
@@ -40,7 +47,7 @@ struct TixyMatrix: View {
             t = Date().timeIntervalSince(started)
         })
         .onAppear(perform: {
-            jsRuntime.updateScript("random() * 2 - 1")
+            jsRuntime.updateScript(script)
         })
     }
 }

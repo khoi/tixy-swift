@@ -34,11 +34,13 @@ struct TixyMatrix: View {
                         }
                     }
                 }
-                TextField("script",
+                TextField("",
                           text: $script,
                           onEditingChanged: { _ in
                               jsRuntime.updateScript(script)
-                          }).foregroundColor(.white)
+                          })
+                    .foregroundColor(.white)
+                    .multilineTextAlignment(.center)
             }
             .frame(width: min(reader.size.width, reader.size.height), height: min(reader.size.width, reader.size.height))
         }

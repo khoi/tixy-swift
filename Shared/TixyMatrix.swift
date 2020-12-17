@@ -44,7 +44,7 @@ struct TixyMatrix: View {
             }
             .frame(width: min(reader.size.width, reader.size.height), height: min(reader.size.width, reader.size.height))
         }
-        .background(Color.black)
+        .background(Color.black.edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/))
         .onReceive(timer, perform: { _ in
             t = Date().timeIntervalSince(started)
         })

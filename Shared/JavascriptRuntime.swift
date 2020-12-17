@@ -1,10 +1,3 @@
-//
-//  JavascriptRuntime.swift
-//  tixy
-//
-//  Created by khoi on 12/17/20.
-//
-
 import Foundation
 import JavaScriptCore
 

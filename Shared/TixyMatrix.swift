@@ -1,10 +1,3 @@
-//
-//  ContentView.swift
-//  Shared
-//
-//  Created by khoi on 12/17/20.
-//
-
 import SwiftUI
 
 func color(v: Double) -> Color {
@@ -15,7 +8,7 @@ func scale(v: Double) -> CGFloat {
     CGFloat(max(min(v, 1), -1))
 }
 
-struct ContentView: View {
+struct TixyMatrix: View {
     let size: Int
 
     let jsRuntime = JavaScriptRuntime()
@@ -47,14 +40,14 @@ struct ContentView: View {
             t = Date().timeIntervalSince(started)
         })
         .onAppear(perform: {
-            jsRuntime.updateScript("(t*10) & (1<<x) && y==8")
+            jsRuntime.updateScript("Math.random() * 2 - 1")
         })
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView(
+        TixyMatrix(
             size: 16
         )
         .previewLayout(.fixed(width: 320, height: 320))

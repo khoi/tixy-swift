@@ -9,8 +9,8 @@
 /* Begin PBXBuildFile section */
 		D62E7ACC258B3EFD000E1EF5 /* tixyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62E7AB9258B3EFC000E1EF5 /* tixyApp.swift */; };
 		D62E7ACD258B3EFD000E1EF5 /* tixyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62E7AB9258B3EFC000E1EF5 /* tixyApp.swift */; };
-		D62E7ACE258B3EFD000E1EF5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62E7ABA258B3EFC000E1EF5 /* ContentView.swift */; };
-		D62E7ACF258B3EFD000E1EF5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62E7ABA258B3EFC000E1EF5 /* ContentView.swift */; };
+		D62E7ACE258B3EFD000E1EF5 /* TixyMatrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62E7ABA258B3EFC000E1EF5 /* TixyMatrix.swift */; };
+		D62E7ACF258B3EFD000E1EF5 /* TixyMatrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62E7ABA258B3EFC000E1EF5 /* TixyMatrix.swift */; };
 		D62E7AD0258B3EFD000E1EF5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D62E7ABB258B3EFD000E1EF5 /* Assets.xcassets */; };
 		D62E7AD1258B3EFD000E1EF5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D62E7ABB258B3EFD000E1EF5 /* Assets.xcassets */; };
 		D6FB60E6258B98BD00E89345 /* JavascriptRuntime.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6FB60E5258B98BD00E89345 /* JavascriptRuntime.swift */; };
@@ -19,7 +19,7 @@
 
 /* Begin PBXFileReference section */
 		D62E7AB9258B3EFC000E1EF5 /* tixyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tixyApp.swift; sourceTree = "<group>"; };
-		D62E7ABA258B3EFC000E1EF5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D62E7ABA258B3EFC000E1EF5 /* TixyMatrix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TixyMatrix.swift; sourceTree = "<group>"; };
 		D62E7ABB258B3EFD000E1EF5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D62E7AC0258B3EFD000E1EF5 /* tixy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tixy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D62E7AC3258B3EFD000E1EF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -63,7 +63,7 @@
 			isa = PBXGroup;
 			children = (
 				D62E7AB9258B3EFC000E1EF5 /* tixyApp.swift */,
-				D62E7ABA258B3EFC000E1EF5 /* ContentView.swift */,
+				D62E7ABA258B3EFC000E1EF5 /* TixyMatrix.swift */,
 				D62E7ABB258B3EFD000E1EF5 /* Assets.xcassets */,
 				D6FB60E5258B98BD00E89345 /* JavascriptRuntime.swift */,
 			);
@@ -193,7 +193,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D62E7ACE258B3EFD000E1EF5 /* ContentView.swift in Sources */,
+				D62E7ACE258B3EFD000E1EF5 /* TixyMatrix.swift in Sources */,
 				D62E7ACC258B3EFD000E1EF5 /* tixyApp.swift in Sources */,
 				D6FB60E6258B98BD00E89345 /* JavascriptRuntime.swift in Sources */,
 			);
@@ -203,7 +203,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D62E7ACF258B3EFD000E1EF5 /* ContentView.swift in Sources */,
+				D62E7ACF258B3EFD000E1EF5 /* TixyMatrix.swift in Sources */,
 				D62E7ACD258B3EFD000E1EF5 /* tixyApp.swift in Sources */,
 				D6FB60E7258B98BD00E89345 /* JavascriptRuntime.swift in Sources */,
 			);
